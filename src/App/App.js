@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
 import { Routes, Route } from "react-router-dom";
-import ProductAction from "../components/ProductAction";
-import ProductDetail from "../components/ProductDetail";
-import ProductComponent from "../components/ProductComponent";
-import ProductorReducer from "../components/ProductReducer";
-import ProductListing from "../components/ProductListing";
+import ProductAction from "../views/ProductAction";
+import ProductDetail from "../views/ProductDetail";
+import ProductComponent from "../views/ProductComponent";
+import ProductorReducer from "../views/ProductReducer";
+import ProductListing from "../views/ProductListing";
+import Footer from "../components/Footer"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/product/:productId" element={<ProductDetail />} />
         <Route path="*">404 not found ✌</Route>
       </Routes>
+      <Footer/>
     </div>
   );
 }

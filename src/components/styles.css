@@ -1,30 +1,19 @@
-.component{
-    margin-top: 5rem;
-}
-.maxWidth{
-    max-width: 100%;
-    display: flex;
-
-}
-
-.row{
-    display: flex;
-    flex-direction: row;
-}
-
-.main_section{
+.navbar{
     width: 100%;
-
-}
-
-.data{
-    width: 80%;
-}
-
-.left_data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header{
     width: 50%;
-}
+    text-align: center;
+  }
 
-.right_data{
-    width: 50%;
-}
+  .footer{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    color: white;
+  }

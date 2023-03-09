@@ -15,7 +15,6 @@ export const fetchSelect = (id) => {
       .then((response) => {
         if (response !== undefined) {
           dispatch(fetchAsyncSelectSuccess(response.data));
-          console.warn("data:--", response.data);
         }
       })
       .catch(function (error) {
@@ -36,31 +35,4 @@ export const fetchAsyncSelectSuccess = (data) => ({
 });
 
 
-
-// export const fetchProducts = () => {
-//   return async function (dispatch, getState) {
-//     const response = await FackeApi.get("/products");
-//     dispatch({ type: ActionTypes.FETCH_PRODUCTS, payload: response.data });
-//   };
-// };
-
-// export const SetProducts = (products) => {
-//   return {
-//     type: ActionTypes.SET_PRODUCTS,
-//     payload: products,
-//   };
-// };
-
-// export const SelectedProduct = (product) => {
-//   return {
-//     type: ActionTypes.SELECTED_PRODUCTS,
-//     payload: product,
-//   };
-// };
-
-// export const RemoveSelectedProduct = () => {
-//   return {
-//     type: ActionTypes.REMOVE_SELECTED_PRODUCTS,
-//   };
-// };
 
